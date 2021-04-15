@@ -1,0 +1,39 @@
+<p></p>
+<p id=a></p>
+<p></p>
+
+<style>
+  body {
+    height: calc(100vh + 8px);
+    background: #62306d;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  p {
+    width: 25vw;
+    height: 50vh;
+    background: #f7ec7d;
+    border-radius: 12.5vw 12.5vw 0 0;
+  }
+
+  p[id] {
+    height: 62.5vw;
+  }
+
+  p:after {
+    content: "";
+    display: block;
+    width: 20vh;
+    height: 20vh;
+    border: 5vw solid #aa445f;
+    background: #e38f66;
+    border-radius: 50%;
+  }
+
+  p[id]:after {
+    background: #aa445f;
+    border-color: #e38f66;
+  }
+</style>
