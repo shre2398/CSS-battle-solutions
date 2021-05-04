@@ -1,0 +1,64 @@
+<div></div>
+<p></p>
+<p></p>
+<style>
+  body {
+    background: #09042A;
+  }
+
+  div {
+    width: 180px;
+    height: 50px;
+    background: #E78481;
+    position: absolute;
+    border-radius: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+  }
+
+  div:before,
+  div:after {
+    content: '';
+    width: 60px;
+    height: 60px;
+    background: #09042A;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    box-shadow: 0 0 0 10px #E78481;
+  }
+
+  div:before {
+    transform: translate(-150%, -50%);
+  }
+
+  div:after {
+    transform: translate(50%, -50%);
+  }
+
+  p:nth-of-type(1) {
+    width: 60px;
+    height: 60px;
+    background: #F5BB9C;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -165%);
+    box-shadow: 0 0 0 10px #09042A;
+  }
+
+  p:nth-of-type(2) {
+    width: 60px;
+    height: 60px;
+    background: #F5BB9C;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, 12%);
+    box-shadow: 0 0 0 10px #09042A;
+  }
+</style>
